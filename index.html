@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="./Bootstrap/bootstrap.min.css">
+    <!-- css file -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- sidebar file -->
+    <link rel="stylesheet" href="css/sidebar.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="./css/all.min.css">
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <!-- title -->
+    <title>Document</title>
+</head>
+
+<body class="bg-black">
+    <!-- loading screen -->
+    <div id="loading-screen">
+        <div class="spinner">
+            <i class="fa-solid fa-spinner fa-spin text-white"></i>
+        </div>
+    </div>
+
+    <div id="sidebar" class="d-flex flex-column justify-content-between">
+        <ul>
+            <ul class="">
+                <li><a href="#" id=search>Search</a></li>
+                <li><a href="#" id="categories">Categories</a></li>
+                <li><a href="#" id="areas">Areas</a></li>
+                <li><a href="#" id="ingredients">Ingredients</a></li>
+                <li><a href="#" id="contact">Contact us</a></li>
+            </ul>
+        </ul>
+        <div class="footer">
+            <div class="social-media">
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+                <a href=""> <i class="fa-solid fa-globe"></i></a>
+            </div>
+            <p>Copyright &copy;2019 All Rights
+                Reserved.</p>
+        </div>
+    </div>
+    <div id="main-content">
+        <button id="toggle-sidebar"
+            class="h-100 position-fixed top-0 bg-white d-flex flex-column justify-content-between align-items-center">
+            <div class="logo">
+                <img src="images/logo.png" width="50px">
+            </div>
+            <i class="fa-solid fa-bars text-black fs-3 d-flex" id="bar"></i>
+            <i class="fa-solid fa-xmark d-none text-black fs-3" id="close"></i>
+            <div class="icons text-black d-flex flex-column gap-3">
+                <i class="fa-solid fa-globe"></i>
+                <i class="fa-solid fa-share"></i>
+            </div>
+        </button>
+        <div class="container" id="container">
+
+            <!-- home page -->
+            <section id="mainMeals" class="">
+                <div class="row row-gap-4" id="myRow">
+
+                </div>
+            </section>
+
+            <!-- details -->
+            <section id="detailsSection" class="">
+                <div class="row my-4" id="detailsRow">
+
+                </div>
+            </section>
+
+            <!-- search -->
+            <section id="searchSection" class="">
+                <div class="input-fields d-flex gap-3">
+                    <input type="search" name="" class="form-control w-50 p-3 text-white bg-transparent border-3"
+                        id="nameSearch" placeholder="Search By Name">
+                    <input type="search" name="" class="form-control w-50 text-white bg-transparent border-3"
+                        id="letterSearch" placeholder=" Search By First Letter">
+                </div>
+                <div class="row mt-3 row-gap-3" id="searchRow">
+
+                </div>
+            </section>
+
+            <!-- categories -->
+            <section id="categoriesSection" class="">
+                <div class="row row-gap-3" id="categoriesRow">
+
+                </div>
+            </section>
+
+            <!-- areas -->
+            <section id="areasSection" class="">
+                <div class="row row-gap-3" id="areasRow">
+
+                </div>
+            </section>
+
+            <!-- ingredients -->
+            <section id="ingredientSection" class="">
+                <div class="row" id="ingredientsRow">
+
+                </div>
+            </section>
+
+            <!-- form -->
+            <section id="formSection" class="">
+                <form class="d-flex justify-content-center align-items-center gap-5 w-100 vh-100">
+                    <div class="row row-gap-3">
+                        <div class="col-md-6">
+                            <input type="text" name="name" class="form-control p-2" id="userName"
+                                placeholder=" Enter your name">
+                            <div class="alert alert-danger mt-2 text-center py-4 d-none" id="nameError">
+                                <p>Special characters and numbers not allowed</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <input type="email" name="email" class="form-control p-2" id="email"
+                                placeholder=" Enter your email">
+                            <div class="alert alert-danger mt-2 text-center py-4 d-none" id="emailError">
+                                <p>Email not valid *exemple@yyy.zzz</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <input type="tel" name="phone" class="form-control p-2" id="phone"
+                                placeholder=" Enter your phone">
+                            <div class="alert alert-danger mt-2 text-center py-4 d-none" id="telError">
+                                <p>Enter valid Phone Number</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <input type="number" name="age" class="form-control p-2" id="age"
+                                placeholder=" Enter your age">
+                            <div class="alert alert-danger mt-2 text-center py-4 d-none" id="ageError">
+                                <p>Enter valid age</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <input type="password" name="password" class="form-control p-2" id="password"
+                                placeholder=" Enter your password">
+                            <div class="alert alert-danger mt-2 text-center py-4 d-none" id="passError">
+                                <p>Enter valid password *Minimum eight characters, at least one letter and
+                                    one
+                                    number:*</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <input type="password" name="repassword" class="form-control p-2" id="repassword"
+                                placeholder="Repassword">
+                            <div class="alert alert-danger mt-2 text-center py-4 d-none" id="repassError">
+                                <p>Enter valid repassword</p>
+                            </div>
+                        </div>
+                        <div class="col-md-12 d-flex justify-content-center">
+                            <button class="btn btn-outline-danger" id="submitBtn">Submit</button>
+                        </div>
+                    </div>
+                </form>
+            </section>
+        </div>
+    </div>
+
+
+    <script src=" ./Bootstrap/bootstrap.min.js"></script>
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
