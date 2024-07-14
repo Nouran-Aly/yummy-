@@ -25,6 +25,12 @@ let letterInput = document.querySelector("#letterSearch")
 $(window).on('load', function () {
     $('#loading-screen').fadeOut('slow', function () {
         $('#main-content').fadeIn('slow');
+        $('#detailsSection').fadeIn('slow');
+        $('#searchSection').fadeIn('slow');
+        $('#categoriesSection').fadeIn('slow');
+        $('#areasSection').fadeIn('slow');
+        $('#ingredientSection').fadeIn('slow');
+
     });
 });
 
