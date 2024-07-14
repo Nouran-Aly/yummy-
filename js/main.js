@@ -145,6 +145,7 @@ function displayMealInDetails(mealsContainer) {
 // search
 document.querySelector("#search").addEventListener("click", function () {
     myRow.classList.add("d-none")
+    detailsRow.classList.add("d-none")
     searchSection.classList.replace("d-none", "d-block")
 })
 
